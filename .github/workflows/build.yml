@@ -1,0 +1,55 @@
+name: Island Survival Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Unity
+      uses: game-ci/unity-builder@v4
+      with:
+        unityVersion: 2022.3.20f1
+        
+    - name: Build WebGL
+      uses: game-ci/unity-builder@v4
+      env:
+        UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+        UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      with:
+        targetPlatform: WebGL
+        buildMethod: FullBuildPipeline.BuildWeChatMiniGame
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: IslandSurvival-WebGL
+        path: Build/webgl
+
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Run tests
+      run: |
+        echo "运行单元测试..."
+        # 这里可以添加测试运行命令
+        
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: TestResults/

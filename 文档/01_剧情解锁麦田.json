@@ -1,0 +1,442 @@
+{
+  "video": {
+    "title": "1.剧情，解锁麦田",
+    "chapter": 1,
+    "chapter_name": "剧情：解锁麦田",
+    "frame_range": "00075-00135",
+    "total_frames": 30,
+    "resolution": "336x190",
+    "notes": "游戏开篇剧情引导章节，展示水上生存、战斗、建造、解锁新区域四大核心玩法"
+  },
+  "frames": [
+    {
+      "index": 75,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["floating", "navigating"],
+      "uiElements": ["resource-bar", "character-portrait", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "calm-discovery",
+      "notableSystems": ["water-movement", "resource-display"],
+      "significance": 0.7,
+      "notes": "开场：主角乘木筏漂于蓝色水面，远处可见陆地轮廓"
+    },
+    {
+      "index": 77,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["moving-toward-shore"],
+      "uiElements": ["resource-bar", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "exploratory",
+      "notableSystems": ["raft-navigation"],
+      "significance": 0.6,
+      "notes": "木筏接近浅滩，水面颜色由深蓝转为浅蓝"
+    },
+    {
+      "index": 79,
+      "contentType": "combat",
+      "perspective": "isometric-top-down",
+      "actions": ["enemy-approach", "combat-trigger"],
+      "uiElements": ["resource-bar", "enemy-marker", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "tense",
+      "notableSystems": ["enemy-detection", "red-name-indicator"],
+      "significance": 0.9,
+      "notes": "首次遭遇敌人：红色'野人'标记出现，箭头指示威胁方向"
+    },
+    {
+      "index": 81,
+      "contentType": "combat",
+      "perspective": "isometric-top-down",
+      "actions": ["enemy-charge", "player-defend"],
+      "uiElements": ["resource-bar", "enemy-health-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "combat",
+      "notableSystems": ["enemy-aggro", "health-display"],
+      "significance": 0.8,
+      "notes": "野人主动追击，主角在木筏上准备战斗"
+    },
+    {
+      "index": 83,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["landing", "disembarking"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "cautious",
+      "notableSystems": ["raft-docking", "water-to-land-transition"],
+      "significance": 0.7,
+      "notes": "木筏靠岸，主角步行进入浅水区，地形变化明显"
+    },
+    {
+      "index": 85,
+      "contentType": "combat",
+      "perspective": "isometric-top-down",
+      "actions": ["melee-attack", "enemy-hits"],
+      "uiElements": ["resource-bar", "attack-arrow", "enemy-health-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "action",
+      "notableSystems": ["melee-combat", "damage-direction-indicator"],
+      "significance": 0.9,
+      "notes": "近战攻击触发：红色箭头指示攻击方向，野人血条下降"
+    },
+    {
+      "index": 87,
+      "contentType": "combat",
+      "perspective": "isometric-top-down",
+      "actions": ["continuing-attack", "enemy-retreat"],
+      "uiElements": ["resource-bar", "attack-arrow"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "intense",
+      "notableSystems": ["hit-stun", "knockback"],
+      "significance": 0.8,
+      "notes": "连续攻击，野人被击退，主角追击"
+    },
+    {
+      "index": 89,
+      "contentType": "combat",
+      "perspective": "isometric-top-down",
+      "actions": ["final-strike", "enemy-defeated"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "triumphant",
+      "notableSystems": ["enemy-death", "combat-resolution"],
+      "significance": 0.8,
+      "notes": "野人被击败消失，战斗胜利"
+    },
+    {
+      "index": 91,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["surveying-area"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "analytical",
+      "notableSystems": ["scene-overview", "terrain-assessment"],
+      "significance": 0.6,
+      "notes": "战斗结束后镜头拉远，展示岛屿全貌：中心深色水坑，边缘浅滩"
+    },
+    {
+      "index": 93,
+      "contentType": "dialogue",
+      "perspective": "isometric-top-down",
+      "actions": [],
+      "uiElements": ["resource-bar", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "determined",
+      "notableSystems": ["narrative-pacing", "goal-setting"],
+      "significance": 0.7,
+      "notes": "字幕：'我赶紧建立一个安全区' — 明确剧情目标"
+    },
+    {
+      "index": 95,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["approaching-center"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "purposeful",
+      "notableSystems": ["pathfinding", "objective-tracking"],
+      "significance": 0.6,
+      "notes": "主角走向岛屿中心深色区域（疑似水源/洞穴）"
+    },
+    {
+      "index": 97,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["entering-cave"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "mysterious",
+      "notableSystems": ["environment-transition", "lighting-change"],
+      "significance": 0.7,
+      "notes": "进入洞穴/水潭区域，光线变暗，场景氛围转变"
+    },
+    {
+      "index": 99,
+      "contentType": "dialogue",
+      "perspective": "isometric-top-down",
+      "actions": [],
+      "uiElements": ["resource-bar", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "narrative",
+      "notableSystems": ["story-progression"],
+      "significance": 0.5,
+      "notes": "字幕区域显示剧情文本（具体内容需音频确认）"
+    },
+    {
+      "index": 101,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["returning-to-raft"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "practical",
+      "notableSystems": ["transport-mechanic"],
+      "significance": 0.6,
+      "notes": "主角返回木筏，准备运输建材"
+    },
+    {
+      "index": 103,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["raft-loading"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "preparatory",
+      "notableSystems": ["cargo-mechanic", "resource-transport"],
+      "significance": 0.7,
+      "notes": "木筏装载建材（木材/石材），向岛屿返回"
+    },
+    {
+      "index": 105,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["placing-foundation"],
+      "uiElements": ["resource-bar", "build-menu"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "constructive",
+      "notableSystems": ["building-placement", "resource-consumption"],
+      "significance": 0.8,
+      "notes": "开始建造：放置地基/围墙第一段"
+    },
+    {
+      "index": 107,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["wall-construction"],
+      "uiElements": ["resource-bar", "build-indicator"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "productive",
+      "notableSystems": ["segmented-building", "wall-placement"],
+      "significance": 0.8,
+      "notes": "围墙分段建造，呈L形延伸"
+    },
+    {
+      "index": 109,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["continuing-construction"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "focused",
+      "notableSystems": ["construction-progress"],
+      "significance": 0.7,
+      "notes": "围墙继续延伸，开始包围中心区域"
+    },
+    {
+      "index": 111,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["wall-closing"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "progressive",
+      "notableSystems": ["enclosure-mechanic"],
+      "significance": 0.8,
+      "notes": "围墙即将闭合，形成半封闭空间"
+    },
+    {
+      "index": 113,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["finalizing-wall"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "satisfying",
+      "notableSystems": ["completion-animation"],
+      "significance": 0.9,
+      "notes": "围墙基本闭合，安全区初具规模"
+    },
+    {
+      "index": 115,
+      "contentType": "building",
+      "perspective": "isometric-top-down",
+      "actions": ["inspecting-base"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "accomplished",
+      "notableSystems": ["base-inspection"],
+      "significance": 0.7,
+      "notes": "主角站在安全区内，俯视展示完整基地布局"
+    },
+    {
+      "index": 117,
+      "contentType": "dialogue",
+      "perspective": "isometric-top-down",
+      "actions": [],
+      "uiElements": ["resource-bar", "subtitle", "completion-banner"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "victorious",
+      "notableSystems": ["objective-complete", "reward-trigger"],
+      "significance": 0.8,
+      "notes": "安全区建立成功提示，可能触发奖励或下一阶段"
+    },
+    {
+      "index": 119,
+      "contentType": "transition",
+      "perspective": "isometric-top-down",
+      "actions": ["area-unlock"],
+      "uiElements": ["resource-bar", "unlock-notification"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "exciting",
+      "notableSystems": ["area-unlock", "new-zone-access"],
+      "significance": 0.9,
+      "notes": "关键转折：新区域'麦田'解锁提示出现"
+    },
+    {
+      "index": 121,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["approaching-wheat-field"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "curious",
+      "notableSystems": ["zone-transition", "new-environment"],
+      "significance": 0.8,
+      "notes": "主角走向麦田入口，场景开始变色"
+    },
+    {
+      "index": 123,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["entering-wheat-field"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "awe",
+      "notableSystems": ["environment-change", "color-palette-shift"],
+      "significance": 0.9,
+      "notes": "进入麦田：冷色调水面→暖色调金黄麦田，视觉冲击强烈"
+    },
+    {
+      "index": 125,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["surveying-field"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "peaceful",
+      "notableSystems": ["new-zone-overview", "agricultural-setting"],
+      "significance": 0.7,
+      "notes": "麦田全景：金黄色麦浪、远处山丘、明亮暖色调"
+    },
+    {
+      "index": 127,
+      "contentType": "dialogue",
+      "perspective": "isometric-top-down",
+      "actions": [],
+      "uiElements": ["resource-bar", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "narrative",
+      "notableSystems": ["story-beat", "next-objective"],
+      "significance": 0.6,
+      "notes": "字幕显示剧情文本，推进故事发展"
+    },
+    {
+      "index": 129,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["moving-through-field"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "discovery",
+      "notableSystems": ["field-navigation", "resource-gathering-hint"],
+      "significance": 0.7,
+      "notes": "主角在麦田中移动，暗示种植/收集玩法"
+    },
+    {
+      "index": 131,
+      "contentType": "exploration",
+      "perspective": "isometric-top-down",
+      "actions": ["finding-resources"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "rewarding",
+      "notableSystems": ["resource-node", "collection-mechanic"],
+      "significance": 0.8,
+      "notes": "发现麦田中的资源点（麦子/作物）"
+    },
+    {
+      "index": 133,
+      "contentType": "dialogue",
+      "perspective": "isometric-top-down",
+      "actions": [],
+      "uiElements": ["resource-bar", "subtitle"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "anticipatory",
+      "notableSystems": ["chapter-end", "setup-for-next"],
+      "significance": 0.7,
+      "notes": "章节收尾字幕，为下一章铺垫"
+    },
+    {
+      "index": 135,
+      "contentType": "transition",
+      "perspective": "isometric-top-down",
+      "actions": ["chapter-complete"],
+      "uiElements": ["resource-bar"],
+      "artStyle": "pixel-art-isometric",
+      "mood": "satisfied",
+      "notableSystems": ["progress-save", "chapter-clear"],
+      "significance": 0.8,
+      "notes": "章节结束：主角站在麦田边缘，等待下一步操作"
+    }
+  ],
+  "overall": {
+    "genre": "survival-building-isometric",
+    "coreLoop": [
+      "explore-water",
+      "fight-enemies",
+      "collect-resources",
+      "build-wall-fortress",
+      "unlock-new-zones",
+      "expand-base"
+    ],
+    "uniqueSellingPoints": [
+      "水上木筏生存+陆地建造双线玩法",
+      "围墙分段建造形成安全区概念",
+      "场景色调随区域变化（冷→暖）强化情感体验",
+      "剧情字幕引导+目标明确的新手引导设计"
+    ],
+    "targetAudience": "休闲策略游戏玩家，喜欢生存建造类（如raft、terraria），偏好轻松节奏与明确目标导向",
+    "platformGuess": "微信小游戏/小程序（基于项目目录结构与336x190低分辨率适配）",
+    "engineGuess": "Cocos Creator 或 微信小游戏原生引擎 [inferred]",
+    "engineEvidence": [
+      "336x190分辨率适合移动端竖屏/小屏横屏",
+      "像素风/低多边形美术风格降低性能需求",
+      "UI布局简洁，资源栏固定顶部，符合微信小游戏规范"
+    ],
+    "perspective": "isometric-top-down-fixed-camera",
+    "artDirection": {
+      "style": "pixel-art-isometric",
+      "colorPalette": {
+        "water-zone": "cool-blue-teal",
+        "land-zone": "green-brown",
+        "wheat-field": "warm-gold-yellow",
+        "enemy-marker": "bright-red"
+      },
+      "lighting": "bright-daytime-universal",
+      "moodProgression": "calm → tense → action → constructive → peaceful"
+    },
+    "keyMechanics": {
+      "movement": "raft-water + walk-land dual mode",
+      "combat": "melee-only with directional-arrow指示",
+      "building": "segmented-wall placement, enclosure-based safety zone",
+      "resource": "4-type bar (gold-wood-stone-food)",
+      "progression": "clear-objective → complete → unlock-next-zone"
+    },
+    "narrativeStructure": {
+      "opening": "drifting-on-water-discovery",
+      "conflict": "wild-man-ambush-combat",
+      "resolution": "build-safe-zone-protect-area",
+      "reward": "unlock-wheat-field-new-gameplay"
+    },
+    "uiDesign": {
+      "topBar": "character-portrait + 4-resource-numbers + level-progress",
+      "bottomBar": "subtitle-area-for-dialogue-narrative",
+      "combatIndicators": "red-arrow-direction + enemy-health-bar",
+      "buildIndicators": "placement-preview + progress-indicator"
+    },
+    "notes": "本章为游戏开篇教程关卡，完整展示了'探索-战斗-建造-解锁'的核心循环。水资源短缺与麦田解锁形成鲜明对比，暗示后续水资源管理可能为核心挑战。围墙建造系统是本章最大亮点，'安全区'概念为玩家提供明确的目标与成就感。建议后续章节深入展示围墙升级、敌人波次、麦田种植等机制。"
+  }
+}

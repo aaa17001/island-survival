@@ -1,0 +1,61 @@
+name: Island Survival Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Unity
+      uses: game-ci/unity-builder@v4
+      with:
+        unityVersion: 2022.3.20f1
+        licenseUrl: ${{ secrets.UNITY_LICENSE_URL }}
+        email: ${{ secrets.UNITY_EMAIL }}
+        password: ${{ secrets.UNITY_PASSWORD }}
+    
+    - name: Build WebGL
+      uses: game-ci/unity-builder@v4
+      with:
+        targetPlatform: WebGL
+        buildMethod: FullBuildPipeline.BuildWeChatMiniGame
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: IslandSurvival-WebGL
+        path: Build/webgl
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: Build/webgl/**/*
+        tag_name: v${{ github.event.release.tag_name }}
+        name: Release ${{ github.event.release.tag_name }}
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run Tests
+      run: |
+        echo "Running unit tests..."
+        # Unity test runner would go here
+    
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: TestResults/
