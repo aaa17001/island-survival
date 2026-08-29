@@ -1,0 +1,44 @@
+# Build outputs
+Looters/build/
+Looters/temp/
+Looters/library/
+Looters/node_modules/
+Looters/profiles/
+Looters3D/build/
+Looters3D/temp/
+Looters3D/library/
+Looters3D/node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Temp
+*.tmp
+*.temp
+.temp_atlas.cjs
+.temp_mem.txt
+.temp_probe.cjs
+.temp_stat.cjs
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg
+
+# Windows
+*.ps1
